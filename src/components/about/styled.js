@@ -4,7 +4,14 @@ export const About = styled.section`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 4rem;
+    gap: 5rem;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    @media (max-width: 1056px) {
+      
+    }   
 `
 export const AboutImage = styled.figure`
 
@@ -22,12 +29,16 @@ export const H3 = styled.h3`
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 6px;
+    @media (max-width: 600px) {
+        font-size: 1.6rem;
+    }
 `
 export const H2 = styled.h2`
     font-size: var(--h2-font);
     font-weight: 500;
     margin: 1.5rem 0;
     line-height: 1.3;
+   
 `
 export const Paragraph = styled.p`
     font-size: var(--p-font);
@@ -41,6 +52,9 @@ export const Counter = styled.div`
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+    @media (max-width: 990px) {
+        justify-content: center;
+    }
 `
 export const CounterText = styled.p`
     & span {
@@ -57,6 +71,9 @@ export const Buttons = styled.div`
     align-items: center;
     flex-wrap: wrap;
     gap: 1.8rem;
+    @media (max-width: 990px) {
+        justify-content: center;
+    }
 `
 export const Button = styled.a`
 

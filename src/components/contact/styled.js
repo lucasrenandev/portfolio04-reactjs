@@ -11,6 +11,9 @@ export const H2 = styled.h2`
     font-weight: 300;
     text-transform: capitalize;
     letter-spacing: 6px;
+    @media (max-width: 600px) {
+        font-size: 1.6rem;
+    }
 `
 export const ContactContent = styled.main`
     display: grid;
@@ -19,8 +22,9 @@ export const ContactContent = styled.main`
 export const Form = styled.form`
     margin-top: 4rem;
     width: 550px;
-    max-width: 100%;
+    max-width: 100vw;
     height: auto;
+    padding: 0 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

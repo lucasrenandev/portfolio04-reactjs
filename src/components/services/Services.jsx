@@ -2,8 +2,18 @@ import { Services, Header, H2, ServicesBox,
 Box, Icon, H4, Paragraph } from "./styled";
 import { BiCast, BiLayer, BiUserVoice, BiDesktop,
 BiCamera, BiLineChart } from "react-icons/bi"
+import { useEffect } from "react";
 
 export default function services() {
+    useEffect(() => {
+        const sr = ScrollReveal({
+            distance: "50px",
+            duration: 2500,
+            reset: true
+        })
+        sr.reveal("#services", {delay: 200, origin: "top"})
+    }, [])
+
     return(
         <Services id="services">
             <Header>

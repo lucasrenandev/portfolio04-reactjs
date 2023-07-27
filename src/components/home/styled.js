@@ -6,19 +6,32 @@ export const Home = styled.section`
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 5rem;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+        text-align: center;
+        height: 100%;
+    }
 `
 export const HomeText = styled.main`
-
+    @media (max-width: 990px) {
+        padding-top: 2rem;
+    }
 `
 export const H3 = styled.h3`
     font-size: 1.5rem;
     font-weight: 500;
+    @media (max-width: 600px) {
+        font-size: 1.4rem;
+    }
 `
 export const H1 = styled.h1`
     font-size: var(--h1-font);
     font-weight: 700;
     line-height: 1;
     margin: 1.4rem 0;
+    @media (max-width: 366px) {
+        line-height: 1.15;
+    }
 `
 export const H4 = styled.h4`
     font-size: 1.15rem;
@@ -26,6 +39,9 @@ export const H4 = styled.h4`
     margin-bottom: 1.4rem;
     & span {
         color: var(--main-color);
+    }
+    @media (max-width: 366px) {
+        line-height: 1.4;
     }
 `
 export const Paragraph = styled.p`

@@ -11,6 +11,9 @@ export const H2 = styled.h2`
     font-weight: 300;
     text-transform: capitalize;
     letter-spacing: 6px;
+    @media (max-width: 600px) {
+        font-size: 1.6rem;
+    }
 `
 export const ResumeContent = styled.main`
     display: grid;
@@ -18,6 +21,9 @@ export const ResumeContent = styled.main`
     align-items: center;
     gap: 2rem;
     margin-top: 5rem;
+    @media (max-width: 400px) {
+        grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    }
 `
 export const Box = styled.div`
     background-color: #0b0b13;

@@ -1,7 +1,16 @@
 import { Resume, Header, H2, ResumeContent,
 Box, H5, H4, Paragraph, H6 } from "./styled";
+import { useEffect } from "react";
 
 export default function resume() {
+    useEffect(() => {
+        const sr = ScrollReveal({
+            distance: "50px",
+            duration: 2500,
+            reset: true
+        })
+        sr.reveal("#resume", {delay: 200, origin: "top"})
+    }, [])
     return(
         <Resume id="resume">
             <Header>

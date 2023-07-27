@@ -20,6 +20,10 @@ export const GlobalStyles = createGlobalStyle`
         --h1-font: 5rem;
         --h2-font: 1.9rem;
         --p-font: 1rem;
+        @media (max-width: 600px) {
+            --h1-font: 3.3rem;
+            --h2-font: 1.8rem;
+        }
     }
 
     #root {
@@ -31,6 +35,15 @@ export const GlobalStyles = createGlobalStyle`
     section {
         width: 100%;
         padding: 120px 14%;
+        @media (max-width: 1321px) {
+            padding: 90px 5%;
+        }
+        @media (max-width: 1056px) {
+            padding: 90px 2%;
+        }
+        @media (max-width: 600px) {
+            padding: 80px 2%;
+        }
     }
 
     .btn {
