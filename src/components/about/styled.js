@@ -8,10 +8,7 @@ export const About = styled.section`
     @media (max-width: 990px) {
         grid-template-columns: 1fr;
         text-align: center;
-    }
-    @media (max-width: 1056px) {
-      
-    }   
+    } 
 `
 export const AboutImage = styled.figure`
 
