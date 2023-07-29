@@ -53,7 +53,7 @@ export const GlobalStyles = createGlobalStyle`
         color: var(--text-color);
         border: 1px solid transparent;
         font-size: 14px;
-        font-size: 400;
+        font-weight: 400;
         letter-spacing: 2px;
         box-shadow: 4px 4px 0 var(--text-color);
         transition: all 0.4s ease;
